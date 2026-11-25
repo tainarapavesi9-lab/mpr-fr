@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertorial - Kinzeno</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ═══════════════════════════════════════
+       BASE — otimizado para leitura 55+ em mobile
+       Regras: corpo ≥19px, contraste alto,
+       nada de texto claro sobre fundo escuro.
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f0f0;
+      color: #1a1a1a;
+      line-height: 1.75;
+      font-size: 19px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ═══════════════════════════════════════
+       TOPBAR
+    ═══════════════════════════════════════ */
+    .msn-topbar {
+      background: #fff;
+      border-bottom: 1px solid #d5d5d5;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .advertorial-tag {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #5a5a5a;
+      letter-spacing: 1.2px;
+      border: 1px solid #b5b5b5;
+      padding: 4px 12px;
+      border-radius: 3px;
+    }
+
+    /* ═══════════════════════════════════════
+       ARTICLE
+    ═══════════════════════════════════════ */
+    .page-wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      min-height: 100vh;
+    }
+
+    .article-body {
+      padding: 26px 26px 40px;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 1.28;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 18px;
+      letter-spacing: -0.2px;
+    }
+
+    h1 .highlight {
+      background: #ffe066;
+      padding: 0 4px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .article-meta {
+      font-size: 15px;
+      color: #5a5a5a;
+      border-bottom: 1px solid #e2e2e2;
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+
+    .social-proof-bar {
+      display: flex;
+      gap: 24px;
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e2e2;
+      flex-wrap: wrap;
+    }
+
+    .social-proof-bar span { display: flex; align-items: center; gap: 7px; }
+    .social-proof-bar i { color: #c49000; }
+
+    h2 {
+      font-size: 27px;
+      font-weight: 700;
+      color: #111;
+      margin: 40px 0 18px;
+      line-height: 1.32;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: 600;
+      color: #111;
+      margin: 30px 0 14px;
+      line-height: 1.35;
+    }
+
+    p { margin-bottom: 18px; }
+
+    .article-img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    .article-video {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin: 20px 0;
+      display: block;
+    }
+
+    .article-img-caption {
+      font-size: 15px;
+      color: #5a5a5a;
+      text-align: center;
+      margin: -12px 0 20px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .dual-caption {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: -12px 0 22px;
+    }
+
+    .dual-caption span {
+      font-size: 15px;
+      color: #5a5a5a;
+      font-style: italic;
+      text-align: center;
+      line-height: 1.45;
+    }
+
+    strong { font-weight: 700; color: #111; }
+
+    blockquote {
+      border-left: 5px solid #c49000;
+      padding: 16px 20px;
+      margin: 24px 0;
+      background: #fdf8ec;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #1a1a1a;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* ═══════════════════════════════════════
+       DESTAQUES — fundo claro, texto escuro,
+       tipo grande. Poucos e espaçados.
+    ═══════════════════════════════════════ */
+
+    /* ── AS TRÊS CAMADAS DO ROLLER ── */
+    .layer-stack {
+      margin: 28px 0;
+      border: 3px solid #4a7a30;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .layer-stack .ls-head {
+      background: #4a7a30;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 14px 18px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .layer {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 20px;
+      background: #f6faf3;
+      border-bottom: 2px solid #dfeed6;
+    }
+
+    .layer:last-child { border-bottom: none; }
+
+    .layer .ly-n {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #4a7a30;
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .layer .ly-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: #2b5d1c;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .layer .ly-txt {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+
+    /* ── AVISO DE SEGURANÇA ── */
+    .warn-box {
+      margin: 26px 0;
+      padding: 20px 22px;
+      background: #fdf1f0;
+      border: 3px solid #b5342a;
+      border-radius: 10px;
+    }
+
+    .warn-box .wb-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #96271e;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.35;
+    }
+
+    .warn-box p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ── HERANÇA BOTÂNICA ── */
+    .herb-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 26px 0;
+    }
+
+    .herb {
+      background: #fcfbf7;
+      border: 2px solid #e4dcc8;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .herb img { width: 100%; height: auto; display: block; }
+
+    .herb .herb-body { padding: 20px 18px 20px; }
+
+    .herb .herb-badge {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #f6efdc;
+      border: 2px solid #d8c79b;
+      color: #8a6500;
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .herb .herb-name {
+      font-size: 19px;
+      font-weight: 700;
+      color: #111;
+      line-height: 1.3;
+      margin-bottom: 3px;
+    }
+
+    .herb .herb-latin {
+      font-size: 15px;
+      font-style: italic;
+      color: #7a6a45;
+      margin-bottom: 9px;
+    }
+
+    .herb .herb-txt {
+      font-size: 17px;
+      line-height: 1.55;
+      color: #333;
+      margin-bottom: 11px;
+    }
+
+    .herb .herb-origin {
+      font-size: 14px;
+      font-weight: 700;
+      color: #8a6500;
+      background: #f6efdc;
+      border-radius: 5px;
+      padding: 6px 10px;
+      display: inline-block;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 560px) {
+      .herb-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── IMAGEM DENTRO DO CARD DE ATIVO ── */
+    .ing-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 0 0 16px;
+      display: block;
+    }
+
+    /* ── PASSO A PASSO DA APLICAÇÃO ── */
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 26px 0;
+    }
+
+    .step-card {
+      background: #fcfcfc;
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .step-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .step-card .step-body { padding: 0 12px 16px; }
+
+    .step-card .step-n {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #2e7d32;
+      color: #fff;
+      font-size: 19px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -19px auto 10px;
+      border: 3px solid #fff;
+      position: relative;
+    }
+
+
+    .step-card.noimg .step-body { padding: 22px 16px; }
+
+    .step-card.noimg .step-n {
+      margin: 0 auto 12px;
+      position: static;
+    }
+
+    .step-card .step-t {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .step-card .step-d {
+      font-size: 16px;
+      color: #4a4a4a;
+      line-height: 1.5;
+    }
+
+    /* 1. REFRAME — o pivô. Máx. 2 na página. */
+    .reframe {
+      margin: 36px 0;
+      padding: 30px 26px;
+      background: #fdf8ec;
+      border: 3px solid #c49000;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .reframe p {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 0;
+      color: #111;
+    }
+
+    .reframe em {
+      font-style: normal;
+      background: #ffe066;
+      padding: 0 5px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    .reframe .kicker {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #8a6500;
+      margin-bottom: 14px;
+    }
+
+    /* 2. STAT — número que para o scroll. Máx. 2. */
+    .stat-block {
+      margin: 28px 0;
+      padding: 24px;
+      background: #fdf8ec;
+      border: 3px solid #c49000;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stat-block .stat-num {
+      font-size: 60px;
+      font-weight: 800;
+      color: #a87c00;
+      line-height: 1;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .stat-block .stat-txt {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+
+    /* 3. CICLO — o mecanismo. 1 uso. */
+    /* 3b. ROTAS — tópico vs cápsula vs remédio. 1 uso. */
+    .route-box {
+      margin: 30px 0;
+      border: 3px solid #b5342a;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .route-box .route-head {
+      background: #b5342a;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 14px 18px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .route {
+      padding: 20px 20px;
+      border-bottom: 2px solid #f0dcda;
+      background: #fdf1f0;
+    }
+
+    .route:last-child { border-bottom: none; }
+
+    .route.win { background: #f2f8ee; border-top: 3px solid #4a7a30; }
+
+    .route .route-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: #96271e;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .route.win .route-name { color: #2b5d1c; }
+
+    .route .route-path {
+      font-size: 16px;
+      color: #5a4340;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .route.win .route-path { color: #3d5a30; }
+
+    .route .route-verdict {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+
+    .route .route-tag {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 11px;
+      border-radius: 4px;
+      margin-top: 12px;
+      background: #b5342a;
+      color: #fff;
+    }
+
+    .route.win .route-tag { background: #2e7d32; }
+
+    .cycle-box {
+      margin: 32px 0;
+      padding: 24px 22px;
+      background: #fdf1f0;
+      border: 3px solid #b5342a;
+      border-radius: 10px;
+    }
+
+    .cycle-box .cycle-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #96271e;
+      margin-bottom: 18px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .cycle-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 11px 0;
+      font-size: 19px;
+      line-height: 1.55;
+      color: #1a1a1a;
+    }
+
+    .cycle-step .num {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #b5342a;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cycle-loop {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 2px dashed #d9a09a;
+      text-align: center;
+      font-size: 19px;
+      font-weight: 700;
+      color: #96271e;
+      line-height: 1.5;
+    }
+
+    /* 4. KEY-LINE — frase de peso. */
+    .key-line {
+      margin: 30px 0;
+      padding: 20px 24px;
+      border-left: 6px solid #4a7a30;
+      background: #f2f8ee;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.55;
+      color: #111;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* 5. MARK — marcador sólido. Uso escasso. */
+    .mark {
+      background: #ffe066;
+      font-weight: 600;
+      padding: 1px 3px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    /* ═══════════════════════════════════════
+       DOCTOR CARD
+    ═══════════════════════════════════════ */
+    .doctor-card {
+      margin: 34px 0;
+      padding: 28px 24px;
+      background: #f7f8fc;
+      border: 1px solid #e6e8f2;
+      border-radius: 12px;
+    }
+
+    .doctor-card .doctor-intro {
+      font-size: 23px;
+      font-weight: 700;
+      color: #111;
+      line-height: 1.4;
+      margin: 0 0 22px;
+    }
+
+    .doctor-card .photo-ring {
+      width: 210px;
+      height: 210px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      border: 3px dashed #c49000;
+      padding: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .doctor-card .photo-ring img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .doctor-card .name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111;
+      margin: 0;
+      text-align: center;
+    }
+
+    .doctor-card .title {
+      font-size: 17px;
+      color: #4a4a4a;
+      margin: 0;
+      text-align: center;
+    }
+
+    /* ═══════════════════════════════════════
+       INGREDIENT CARDS
+    ═══════════════════════════════════════ */
+    .ingredient-card {
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      padding: 24px 22px;
+      margin: 24px 0;
+      background: #fcfcfc;
+    }
+
+    .ingredient-card .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .icon-curcuma { background: #b8860b; }
+    .icon-greentea { background: #4a7a30; }
+    .icon-piperine { background: #2b2b2b; }
+
+    .ingredient-card h4 {
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #111;
+      line-height: 1.35;
+    }
+
+    .ingredient-card .study-tag {
+      display: inline-block;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      color: #fff;
+      background: #4a7a30;
+      padding: 4px 11px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 18px 0;
+    }
+
+    .check-list li {
+      padding: 8px 0 8px 34px;
+      position: relative;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .check-list li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #4a7a30;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 17px;
+    }
+
+    /* ═══════════════════════════════════════
+       TESTIMONIALS
+    ═══════════════════════════════════════ */
+    .testimonial {
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      padding: 24px 22px;
+      margin: 24px 0;
+      background: #fcfcfc;
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .testimonial-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .testimonial-header .info .name {
+      font-weight: 700;
+      font-size: 19px;
+      color: #111;
+      margin: 0;
+    }
+
+    .testimonial-header .info .meta {
+      font-size: 17px;
+      color: #4a4a4a;
+      margin: 0;
+    }
+
+    .stars {
+      color: #d99a00;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-text {
+      font-size: 19px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      font-style: italic;
+      margin: 0;
+    }
+
+    .verified {
+      font-size: 16px;
+      color: #3d6628;
+      margin: 12px 0 0;
+      font-weight: 600;
+    }
+
+    .verified i { margin-right: 5px; }
+
+    /* ═══════════════════════════════════════
+       CTA
+    ═══════════════════════════════════════ */
+    .cta-wrap {
+      text-align: center;
+      margin: 34px 0;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #2e7d32;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 20px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.2s;
+      width: 100%;
+      max-width: 460px;
+      line-height: 1.3;
+      box-shadow: 0 3px 0 #1f5c24;
+    }
+
+    .cta-btn:hover, .cta-btn:focus { background: #256428; }
+    .cta-btn:focus-visible { outline: 4px solid #111; outline-offset: 3px; }
+
+    .cta-btn .sub {
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      opacity: 0.95;
+      margin-top: 7px;
+      line-height: 1.4;
+    }
+
+    .cta-btn::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+      animation: shine 3.5s infinite;
+    }
+
+    @keyframes shine {
+      0% { left: -100%; }
+      50%, 100% { left: 100%; }
+    }
+
+    /* ═══════════════════════════════════════
+       GUARANTEE
+    ═══════════════════════════════════════ */
+    .guarantee-box {
+      border: 3px solid #c49000;
+      border-radius: 10px;
+      padding: 26px 22px;
+      margin: 32px 0;
+      background: #fdf8ec;
+      text-align: center;
+    }
+
+    .guarantee-box .seal-css {
+      width: 108px;
+      height: 108px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: #c49000;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 3px #c49000, 0 2px 8px rgba(0,0,0,.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .guarantee-box .seal-num {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .guarantee-box .seal-label {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
+    .guarantee-box h4 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #8a6500;
+      margin-bottom: 14px;
+      line-height: 1.35;
+    }
+
+    .guarantee-box p {
+      font-size: 19px;
+      color: #1a1a1a;
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════
+       FAQ
+    ═══════════════════════════════════════ */
+    .faq-item {
+      border: 2px solid #dcdcdc;
+      border-radius: 8px;
+      margin: 12px 0;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 18px 20px;
+      font-weight: 700;
+      font-size: 19px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      background: #f7f7f7;
+      color: #111;
+      line-height: 1.45;
+      transition: background 0.2s;
+    }
+
+    .faq-question:hover { background: #ededed; }
+
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 19px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 900px;
+      padding: 18px 20px;
+    }
+
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    .faq-chevron { transition: transform 0.3s; flex-shrink: 0; font-size: 17px; }
+
+    /* ═══════════════════════════════════════
+       FLOATING BAR
+    ═══════════════════════════════════════ */
+    .floating-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 3px solid #2e7d32;
+      padding: 10px 14px;
+      z-index: 200;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 -4px 14px rgba(0,0,0,0.12);
+    }
+
+    .floating-bar .cta-btn {
+      font-size: 19px;
+      padding: 15px 22px;
+      max-width: 420px;
+      box-shadow: none;
+    }
+
+    .floating-bar .cta-btn .sub { font-size: 14px; margin-top: 4px; }
+
+    /* ═══════════════════════════════════════
+       COMPARISON TABLE
+    ═══════════════════════════════════════ */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 17px;
+    }
+
+    .comparison-table th {
+      background: #ededed;
+      padding: 12px 10px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #333;
+      line-height: 1.35;
+    }
+
+    .comparison-table td {
+      padding: 13px 10px;
+      border-bottom: 1px solid #e2e2e2;
+      line-height: 1.45;
+      vertical-align: top;
+    }
+
+    .comparison-table .fail { color: #a82c22; font-weight: 600; }
+    .comparison-table .pass { color: #2e7d32; font-weight: 600; }
+
+    /* ═══════════════════════════════════════
+       INFO BOX
+    ═══════════════════════════════════════ */
+    .info-box {
+      background: #eef5fc;
+      border-left: 6px solid #2670b0;
+      padding: 20px 22px;
+      margin: 26px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 19px;
+      line-height: 1.65;
+    }
+
+    .info-box p:last-child { margin-bottom: 0; }
+
+    .warn-box {
+      background: #fdf8ec;
+      border-left: 6px solid #c49000;
+      padding: 20px 22px;
+      margin: 26px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 19px;
+      line-height: 1.65;
+    }
+
+    .warn-box p:last-child { margin-bottom: 0; }
+
+    .divider {
+      border: none;
+      border-top: 2px solid #e8e8e8;
+      margin: 38px 0;
+    }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    .footer {
+      background: #222;
+      color: rgba(255,255,255,0.82);
+      padding: 30px 24px 120px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .footer-brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+
+    .affiliate-notice {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.22);
+      padding: 15px 16px;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      font-size: 15px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.65;
+    }
+
+    .disclaimer-toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+      cursor: pointer;
+      font-size: 16px;
+      color: rgba(255,255,255,0.92);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .disclaimer-toggle:hover { color: #fff; }
+
+    .footer-disclaimer {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.75;
+      padding: 14px 0;
+    }
+
+    .sumir {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0;
+    }
+
+    .chevron { transition: transform 0.3s; font-size: 14px; flex-shrink: 0; }
+
+    /* ═══════════════════════════════════════
+       MOBILE — tipo NÃO diminui, só o padding
+    ═══════════════════════════════════════ */
+    @media (max-width: 560px) {
+      body { font-size: 19px; }
+      .article-body { padding: 22px 18px 38px; }
+      h1 { font-size: 28px; }
+      h2 { font-size: 24px; margin: 34px 0 16px; }
+      h3 { font-size: 21px; }
+      .subtitle { font-size: 19px; }
+      .reframe { padding: 24px 18px; }
+      .step-grid { grid-template-columns: 1fr; gap: 16px; }
+      .reframe p { font-size: 22px; }
+      .stat-block { padding: 20px 16px; }
+      .stat-block .stat-num { font-size: 52px; }
+      .key-line { font-size: 19px; padding: 18px 18px; }
+      .cta-btn { font-size: 20px; padding: 18px 20px; }
+      .comparison-table { font-size: 16px; }
+      .comparison-table th { font-size: 14px; padding: 10px 7px; }
+      .comparison-table td { padding: 11px 7px; }
+      .doctor-card { padding: 24px 18px; }
+      .doctor-card .doctor-intro { font-size: 21px; }
+      .doctor-card .photo-ring { width: 180px; height: 180px; }
+      .footer { padding: 26px 18px 120px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cta-btn::after { animation: none; }
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <div class="msn-topbar">
+    <div class="advertorial-tag">Annons</div>
+  </div>
+
+  <div class="article-body">
+
+    <h1>Ortopeden sa åt mig att hyra rullstol till min dotters bröllop. <span class="highlight">Elva veckor senare gick jag med henne uppför kyrkgången — och det enda som förändrats i min vardag var ett redskap med fem kulor.</span></h1>
+
+    <p class="subtitle">Jag äter blodtrycksmedicin, så antiinflammatoriskt är uteslutet. Och när jag äntligen förstod vad som skulle göras stötte jag på ett problem ingen hade varnat mig för: jag hade inte längre kraft i händerna att göra det.</p>
+
+    <img src="index_files/1.webp" alt="Far som följer sin dotter uppför kyrkgången" class="article-img">
+
+    <div class="article-meta">
+      <span>Publicerad: <span id="dynamic-date">24 november 2026</span></span>
+    </div>
+
+    <div class="social-proof-bar">
+      <span><i class="fas fa-share-alt"></i> <span id="shares-count">512</span> delningar</span>
+      <span><i class="fas fa-comment"></i> <span id="comments-count">178</span> kommentarer</span>
+    </div>
+
+    <p>Jag är 64 år och var brevbärare i 38 av dem.</p>
+
+    <p>Över 130 000 kilometer till fots — tre varv runt jorden, med väskan alltid på höger axel.</p>
+
+    <p>Knäna skickade räkningen. Vid 60 tog jag trapporna i sidled, ett steg i taget, med båda händerna på ledstången.</p>
+
+    <p>I mars ringde min dotter och sa att hon skulle gifta sig i september.</p>
+
+    <p>Jag grät i telefonen. Sedan lade jag på och gjorde det enda räknestycke som betydde något för mig: <strong>kyrkgången i den kyrkan är ungefär fyrtio meter.</strong></p>
+
+    <p>På den tiden kom jag inte tvärs över mataffären utan att stanna två gånger.</p>
+
+    <hr class="divider">
+
+    <p>Jag bokade tid hos ortopeden veckan därpå. Tog med röntgenbilden och en enda fråga: vad går att göra till september.</p>
+
+    <p>Han tittade på bilden, tittade på min journal och sa:</p>
+
+    <blockquote>«&nbsp;Med ditt blodtryck är antiinflammatoriskt i längden uteslutet. Då återstår en spruta, som inte håller dig ett halvår. Ärligt talat? <strong>Hyr en rullstol till dagen.</strong> Du går in med henne och använder stolen resten av tiden.&nbsp;»</blockquote>
+
+    <p>Jag har ätit losartan i nio år. Jag visste redan att antiinflammatoriskt och högt blodtryck inte går ihop — min husläkare upprepar det vid varje besök.</p>
+
+    <p>Det jag inte var beredd på var att höra ordet rullstol.</p>
+
+    <p><span class="mark">Jag tänker inte komma in i rullstol på min dotters bröllop.</span></p>
+
+    <p>Jag sa det högt, där på mottagningen. Han ryckte på axlarna och sa att jag var envis.</p>
+
+    <p>Det var jag. Och jag hade <strong>elva veckor.</strong></p>
+
+    <hr class="divider">
+
+    <h2>De första sex veckorna vann jag inte en enda meter</h2>
+
+    <p>Jag köpte gurkmejakapslar. Kollagenkapslar. Ingefärste varje morgon, sådant som min mor brukade koka.</p>
+
+    <p>Jag köpte tre krämer på apoteket — den som värmer, den som kyler, den som luktar kamfer på tre meters håll. Det pirrade i tjugo minuter och sedan var värken tillbaka på exakt samma ställe.</p>
+
+    <p>Jag köpte knästöd. Jag köpte värmekudde.</p>
+
+    <p>Jag räknade ihop alltihop efteråt, av ren nyfikenhet: <strong>nästan 2 000 kronor på sex veckor</strong>, besöket inräknat. Utöver två sjukgymnastbesök à 550 kronor som jag hoppade av på grund av priset.</p>
+
+    <p>Sex veckor. Ingenting.</p>
+
+    <p>Fem kvar, och jag hade börjat förlika mig med rullstolen, när jag berättade alltihop för min dotter över en söndagsmiddag.</p>
+
+    <p>Hon är apotekare. Hon lyssnade utan att avbryta, hämtade en servett och en penna, och ställde en fråga jag aldrig stannat upp inför under 64 år:</p>
+
+    <p><em>«&nbsp;Pappa, när du sväljer en gurkmejakapsel — vilken väg tar den innan den når knät?&nbsp;»</em></p>
+
+    <p>Mun. Magsäck. Lever. Blodomlopp. Hela kroppen.</p>
+
+    <p><em>«&nbsp;Och hur mycket tror du blir kvar till knät?&nbsp;»</em></p>
+
+    <div class="reframe">
+      <span class="kicker">Det hon sa</span>
+      <p>«&nbsp;Pappa, de här växterna fungerar.<br>Du <em>sväljer</em> dem.&nbsp;»</p>
+    </div>
+
+    <p>Hon ritade upp vägarna jag redan provat på servetten. Och var var och en av dem lämnade mig i sticket.</p>
+
+    <div class="route-box">
+      <div class="route-head">Min dotters servett</div>
+
+      <div class="route">
+        <div class="route-name">Tabletter och kapslar</div>
+        <div class="route-path">Mun → magsäck → lever → blodomlopp → hela kroppen</div>
+        <div class="route-verdict">För att behandla <strong>ett</strong> knä översvämmar du hela kroppen. Det är därför antiinflammatoriskt påverkar blodtryck och magsäck — allt får dosen. Och gurkmejakapseln har ett annat problem: <strong>curcumin tas notoriskt dåligt upp av tarmen.</strong> Jag betalade för sex veckor av något bra som aldrig kom fram.</div>
+        <div class="route-tag">Kommer fram utspätt</div>
+      </div>
+
+      <div class="route">
+        <div class="route-name">Apotekskrämer</div>
+        <div class="route-path">Hud → överhud → <strong>stannar här</strong></div>
+        <div class="route-verdict">Värmen och kylan jag kände var inte lindring som kom fram. Det var mentol som lurade temperaturreceptorer i ytan och dämpade signalen i tjugo minuter. <strong>Hudens yttersta lager finns just för att inte släppa in något</strong> — och det sköter sitt jobb bra.</div>
+        <div class="route-tag">Tar sig inte igenom</div>
+      </div>
+
+      <div class="route">
+        <div class="route-name">Knästöd och värmekudde</div>
+        <div class="route-path">Värme och tryck utifrån → <strong>slutar när du tar av det</strong></div>
+        <div class="route-verdict">Det värmer huden, det klämmer utifrån, det känns skönt för stunden. Det levererar ingenting till det som ligger under. <strong>Lindringen upphör i samma sekund som du tar av det.</strong></div>
+        <div class="route-tag">Inget levereras</div>
+      </div>
+
+      <div class="route win">
+        <div class="route-name">Vägen jag inte kände till</div>
+        <div class="route-path">Hud → <strong>tryck som öppnar vägen</strong> → vävnaden, direkt på stället</div>
+        <div class="route-verdict">Att föra det verksamma genom huden till där det gör ont. Ingen magsäck, ingen påverkan på blodtrycket, inget som stannar i ytan. <strong>Men det kräver något ingen hade sagt till mig: verkligt tryck mot huden.</strong> Det räcker inte att breda ut — man måste bearbeta punkten.</div>
+        <div class="route-tag">Kräver tryck</div>
+      </div>
+    </div>
+
+    <p>Jag satt och tittade på den servetten en bra stund. Fem veckor kvar, och jag hade just fått veta att de sex föregående aldrig haft en chans.</p>
+
+    <hr class="divider">
+
+    <h2>Sedan berättade hon det som vände upp och ner på mig</h2>
+
+    <img loading="lazy" src="index_files/2.webp" alt="Hemmagjort försök att blanda gurkmeja med salva på badrumsvasken" class="article-img">
+
+    <p>Gurkmeja har funnits i ayurvedisk och kinesisk medicin i <strong>över fyra tusen år</strong>. Ingefära är en grundpelare i japansk kampo. Ginseng har vördats i Korea i två tusen år. Indiskt rökelseharts har använts mot ledvärk sedan innan det fanns apotek.</p>
+
+    <p>De här växterna överlevde inte fyrtio århundraden av en slump.</p>
+
+    <p>Och modern forskning har redan bekräftat varför: <span class="mark">deras ämnen verkar på precis samma enzymvägar som apotekets antiinflammatoriska angriper.</span> Curcumin hämmar COX-2. Gingerol dämpar samma enzymer som NSAID. Boswelliasyrorna hämmar 5-LOX.</p>
+
+    <p>Så varför gjorde mina kapslar ingenting?</p>
+
+    <div class="reframe">
+      <p>Fyra tusen år med rätt växter.<br>Alltid genom <em>fel dörr.</em></p>
+    </div>
+
+    <p>Te, pulver, kapsel, avkok. Varenda tradition på jorden gav de här växterna genom munnen, för det var den enda vägen som fanns.</p>
+
+    <p>Utom en tradition, som gjorde tvärtom.</p>
+
+    <hr class="divider">
+
+    <h2>I Japan löste de det på ett annat sätt</h2>
+
+    <img loading="lazy" src="index_files/3.webp" alt="Tryckpunkter i japansk shiatsu" class="article-img">
+
+    <p>Medan Indien och Kina arbetade med växterna utvecklade Japan något annat: <strong>shiatsu</strong> — ordagrant "tryck med fingrarna".</p>
+
+    <p>Shiatsuterapeuter har i århundraden arbetat med rytmiskt tryck på bestämda punkter, helt utan kräm. Bara trycket, applicerat på ett precist och upprepat sätt.</p>
+
+    <p>Min dotter förklarade varför det spelar roll. Fast och upprepat tryck gör tre saker med huden som enkel insmörjning inte gör: det värmer vävnaden, ökar det lokala flödet, och <strong>öppnar vägen för det som ligger på ytan att ta sig ner.</strong></p>
+
+    <div class="key-line">
+      Växterna löser vad som ska levereras. Shiatsun löser hur det ska komma fram.
+    </div>
+
+    <p>Då sa jag det mest självklara i världen:</p>
+
+    <p><em>«&nbsp;Då är det bara att smörja på krämen och massera hårt.&nbsp;»</em></p>
+
+    <p>Hon tittade på mina händer och sa ingenting på några sekunder.</p>
+
+    <p>Sedan sa hon:</p>
+
+    <blockquote>«&nbsp;Pappa, jag såg dig försöka öppna syltburken i julas. Och ryggen — klarar du av att pressa hårt mot din egen ländrygg i trettio sekunder?&nbsp;»</blockquote>
+
+    <p>Det klarade jag inte.</p>
+
+    <p><span class="mark">Trettioåtta år med väskan på axeln tog kål på min högra axel och på händerna på köpet.</span> Jag hade äntligen förstått vad som skulle göras — och hade inte kraft i händerna att göra det.</p>
+
+    <hr class="divider">
+
+    <h2>Då visade hon mig redskapet</h2>
+
+    <p>Hon tog fram telefonen och visade mig något jag aldrig sett: en <strong>roller</strong> — ett redskap med fem metallkulor i änden som snurrar åt alla håll, med gelen inuti.</p>
+
+    <p>Den heter <strong>Kinzeno</strong>.</p>
+
+    <img loading="lazy" src="index_files/4.png" alt="Kinzeno — magnetisk massageroller" class="article-img">
+
+    <p>Man smörjer inte med handen. Man <em>rullar</em>. Armens tyngd skapar trycket, och de fem kulorna gör jobbet som fingrarna skulle ha gjort — <span class="mark">utan att kräva någon greppstyrka alls.</span></p>
+
+    <p>Och det finns en detalj som bara den med dåliga händer förstår: <strong>gelen kommer ut genom kulorna, så mina fingrar rör den inte ens.</strong> Jag behöver inte breda ut, inte gnida, inte tvätta händerna efteråt. Sätter an och rullar.</p>
+
+    <p>Och eftersom kulorna snurrar 360 grader når den ställen min hand inte kommit åt på åratal: ländryggen, skulderbladet, baksidan av knät.</p>
+
+    <div class="layer-stack">
+      <div class="ls-head">Tre saker händer vid varje drag</div>
+
+      <div class="layer">
+        <div class="ly-n"><i class="fas fa-hand-dots"></i></div>
+        <div>
+          <div class="ly-name">Trycket</div>
+          <div class="ly-txt">De fem kulorna återskapar shiatsuns rytmiska tryck — logiken i en terapeuts fingrar, utan att vara beroende av dina händer.</div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="ly-n"><i class="fas fa-magnet"></i></div>
+        <div>
+          <div class="ly-name">Magnetfältet</div>
+          <div class="ly-txt">Varje kula är en neodymmagnet. När de rullar skapar de ett rörligt magnetfält över huden.</div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="ly-n"><i class="fas fa-leaf"></i></div>
+        <div>
+          <div class="ly-name">Växterna</div>
+          <div class="ly-txt">Medan trycket bearbetar vävnaden lägger kulorna gelen på exakt rätt punkt.</div>
+        </div>
+      </div>
+    </div>
+
+    <p>Hon förklarade också varför hon valde just den:</p>
+
+    <ul class="check-list">
+      <li><strong>Den innehåller inga läkemedel</strong>, så den skulle inte krocka med min losartan</li>
+      <li>Huvudingredienserna har publicerad forskning bakom sig — arnika jämförd med ibuprofengel vid handvärk, MSM i en klinisk studie på knän, boswellia i en dubbelblind placebokontrollerad studie</li>
+      <li>Det var redan <strong>över 30 000 personer</strong> som använde den</li>
+    </ul>
+
+    <p><em>«&nbsp;Det här är inget internetlöfte, pappa. Det är publicerat.&nbsp;»</em></p>
+
+    <p>Det var den första punkten som avgjorde för mig. Nio år på blodtrycksmedicin har lärt mig att alltid ställa samma fråga innan jag stoppar i mig något: <span class="mark">kommer det här att krocka med det jag redan tar?</span></p>
+
+    <p>För första gången var svaret nej. För den går inte ut i blodet — den stannar där man lägger den.</p>
+
+    <p>Jag beställde samma eftermiddag. Den kom efter fyra dagar — och när jag öppnade kartongen var det <strong>exakt fem veckor</strong> kvar till bröllopet.</p>
+
+    <hr class="divider">
+
+    <h2>Vad som finns i gelen</h2>
+
+    <p>Över trettio naturliga beståndsdelar, inte ett enda läkemedel. Det här är de fyra som hon insisterade på att visa mig i listan innan jag beställde:</p>
+
+    <div class="herb-grid">
+
+      <div class="herb">
+        <div class="herb-body">
+          <div class="herb-badge"><i class="fas fa-seedling"></i></div>
+          <div class="herb-name">Gurkmeja</div>
+          <div class="herb-latin">Curcuma longa och zedoaria</div>
+          <div class="herb-txt">Världens mest studerade naturliga antiinflammatoriska ämne. Hämmar COX-2 — samma väg som vanliga antiinflammatoriska läkemedel. På huden verkar den på stället, utan att tappa styrka i matsmältningen.</div>
+          <div class="herb-origin">Ayurveda och kinesisk medicin · 4 000+ år</div>
+        </div>
+      </div>
+
+      <div class="herb">
+        <div class="herb-body">
+          <div class="herb-badge"><i class="fas fa-fire-flame-simple"></i></div>
+          <div class="herb-name">Ingefära</div>
+          <div class="herb-latin">Zingiber officinale</div>
+          <div class="herb-txt">Gingerol och shogaol dämpar samma inflammatoriska enzymer som NSAID. Värmer på djupet och hjälper en stel led att släppa.</div>
+          <div class="herb-origin">Japansk kampo och kinesisk medicin</div>
+        </div>
+      </div>
+
+      <div class="herb">
+        <div class="herb-body">
+          <div class="herb-badge"><i class="fas fa-tree"></i></div>
+          <div class="herb-name">Boswellia</div>
+          <div class="herb-latin">Boswellia serrata</div>
+          <div class="herb-txt">Boswelliasyrorna i indiskt rökelseharts hämmar 5-LOX, ett nyckelenzym i inflammation. Årtusenden av ayurvedisk användning, i dag med forskning bakom sig.</div>
+          <div class="herb-origin">Ayurveda · indiskt rökelseharts</div>
+        </div>
+      </div>
+
+      <div class="herb">
+        <div class="herb-body">
+          <div class="herb-badge"><i class="fas fa-bolt"></i></div>
+          <div class="herb-name">Magnesium + MSM</div>
+          <div class="herb-latin">Mineral och organiskt svavel</div>
+          <div class="herb-txt">Magnesium sköter samtalet mellan nerv och muskel — brist på det är en av de vanligaste orsakerna till kramp och spänning. MSM stödjer bindväven.</div>
+          <div class="herb-origin">Levereras direkt i vävnaden</div>
+        </div>
+      </div>
+
+    </div>
+
+    <p>Tillsammans med dem kommer ginseng, moringa, arnika, mannitol, allantoin, mentol, E-vitamin, B-komplex och över tjugo andra naturliga ämnen.</p>
+
+    <div class="cta-wrap">
+      <span class="cta-btn" id="CTA1">
+        Se hela innehållet
+        <span class="sub">Inga läkemedel · Receptfritt · Diskret leverans</span>
+      </span>
+    </div>
+
+    <hr class="divider">
+
+    <h2>De fem veckorna som var kvar</h2>
+
+    <p><strong>Vecka 1.</strong> Det första jag kände var kylan från metallkulorna, som är något annat än kylan från mentol — den kommer från själva stålet som rullar mot huden. I övrigt nästan ingenting. Det var veckan jag tvivlade som mest.</p>
+
+    <p><strong>Vecka 2.</strong> Jag slutade vakna på nätterna. Det var inte så att värken försvann — den slutade väcka mig. Jag märkte det för att min fru påpekade att jag sovit hela natten.</p>
+
+    <p><strong>Vecka 3.</strong> Jag gick nerför trappan hemma med blicken framåt i stället för på fötterna. Jag gjorde det utan att tänka, och stannade sedan på nedersta steget och insåg vad som just hänt.</p>
+
+    <p><strong>Vecka 4.</strong> Jag gick från parkeringen till butiken för att prova kostymen, utan att stanna på vägen. Det är ungefär hundrafemtio meter.</p>
+
+    <p><strong>Vecka 5.</strong> Jag övade brudvalsen i vardagsrummet med min dotter, två gånger, hela låten igenom.</p>
+
+    <p>På bröllopsdagen körde jag rollern på morgonen, innan kostymen åkte på.</p>
+
+    <p><span class="mark">Jag gick alla fyrtio meterna av kyrkgången med henne under armen.</span> Utan att stanna, utan käpp, utan någon stol.</p>
+
+    <p>Jag dansade hela brudvalsen. Jag stod upp och tog emot gratulationer till nästan midnatt.</p>
+
+    <p>Jag ska inte påstå att det inte gjorde ont dagen därpå — det gjorde det, rejält. Men jag hade exakt elva veckor och jag använde varenda en.</p>
+
+    <p>Ortopeden fick höra det av sin receptionist, som bor granne med min syster. På återbesöket frågade han vad jag hade gjort.</p>
+
+    <p><strong>Jag berättade. Han skrev upp namnet på en lapp.</strong></p>
+
+    <div class="cta-wrap">
+      <span class="cta-btn" id="CTA2">
+        Se vad jag använde
+        <span class="sub">Inga läkemedel · Receptfritt · Diskret leverans</span>
+      </span>
+    </div>
+
+    <hr class="divider">
+
+    <h2>Så gör jag</h2>
+
+    <video class="article-video" src="index_files/kinzeno.mp4" autoplay muted loop playsinline preload="none"></video>
+
+    <div class="step-grid step-grid-noimg">
+      <div class="step-card noimg">
+        <div class="step-body">
+          <div class="step-n">1</div>
+          <div class="step-t">Sätt an och rulla</div>
+          <div class="step-d">Handen rör inte ens gelen. Kulorna släpper ut den själva.</div>
+        </div>
+      </div>
+      <div class="step-card noimg">
+        <div class="step-body">
+          <div class="step-n">2</div>
+          <div class="step-t">Låt tyngden jobba</div>
+          <div class="step-d">Du behöver inte trycka. Armens tyngd gör redan trycket.</div>
+        </div>
+      </div>
+      <div class="step-card noimg">
+        <div class="step-body">
+          <div class="step-n">3</div>
+          <div class="step-t">Fortsätt dagen</div>
+          <div class="step-d">Ingen fetma, ingen apotekslukt. En doft av mynta, och sedan inget.</div>
+        </div>
+      </div>
+    </div>
+
+    <p>Två till fyra gånger om dagen. Jag kör den på morgonen och före sänggåendet — kvällens är den jag inte hoppar över.</p>
+
+    <p>Och en sak som jag först märkte på bröllopsdagen: <strong>den fläckade inte kostymen och ingen kände någon salvlukt om mig.</strong> Med den där kamferkrämen hade hela kyrkan vetat om det.</p>
+
+    <p>Jag använder den på båda knäna och på ländryggen — som är stället jag aldrig kommit åt med handen. Den fungerar också på axlar, nacke, händer, handleder, höfter och vader.</p>
+
+    <hr class="divider">
+
+    <h2>Det var inte bara jag</h2>
+
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <img loading="lazy" src="index_files/8.webp" alt="Margareta L.">
+        <div class="info">
+          <p class="name">Margareta L., 63 år</p>
+          <p class="meta">Pianolärare</p>
+        </div>
+      </div>
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="testimonial-text">«&nbsp;När mina händer började låsa sig var det inte bara värk — det var mitt yrke som höll på att försvinna. Jag hade redan gått från tolv elever till fyra. Detaljen som avgjorde för mig var just den: jag hade inte kraft att massera mina egna fingrar, och med rollern behöver jag inte. Kör den över händer och handleder före första lektionen. I vecka fem spelade jag Nocturne i Ess-dur rakt igenom, utan att stanna, för första gången på nästan två år.&nbsp;»</p>
+      <p class="verified"><i class="fas fa-circle-check"></i> Verifierat köp</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <img loading="lazy" src="index_files/9.webp" alt="Jan-Olof B.">
+        <div class="info">
+          <p class="name">Jan-Olof B., 70 år</p>
+          <p class="meta">Pensionerad taxichaufför</p>
+        </div>
+      </div>
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="testimonial-text">«&nbsp;Fyrtio år bakom ratten förstörde min ländrygg, och vaderna krampade nästan varje natt. Problemet är att ländryggen är precis det stället jag inte når — min fru fick smörja åt mig, och hon har artros hon också. Med rollern kommer jag åt själv. I andra veckan fick jag min första hela natt. Nu sover hon i vår säng igen.&nbsp;»</p>
+      <p class="verified"><i class="fas fa-circle-check"></i> Verifierat köp</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-header">
+        <img loading="lazy" src="index_files/10.webp" alt="Therese A.">
+        <div class="info">
+          <p class="name">Therese A., 57 år</p>
+          <p class="meta">Sjuksköterska</p>
+        </div>
+      </div>
+      <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+      <p class="testimonial-text">«&nbsp;Fyra stjärnor för att jag väntade mig ett resultat redan första dagen och inte fick något. Jag kände kylan från kulorna, tyckte det var skönt och inget mer. Det jag gjorde fel var att rulla för fort, som när man tar deodorant. Jag började göra det långsamt, envisas med punkten som gör ont, och det blev en annan sak. Jag står på benen tolv timmar och mina fötter i slutet av passet var rena plågan. Nu kör jag hem utan att ta av mig skorna på vägen. En varning: långsamt, det är ingen deodorant.&nbsp;»</p>
+      <p class="verified"><i class="fas fa-circle-check"></i> Verifierat köp</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="guarantee-box">
+      <div class="seal-css">
+        <span class="seal-num">60</span>
+        <span class="seal-label">Dagar</span>
+      </div>
+      <h4>60 dagars garanti</h4>
+      <p>Om du inte märker någon skillnad — oavsett skäl, eller helt utan skäl — räcker ett mejl och pengarna kommer tillbaka. Två hela månader att testa, vilket är betydligt mer än de fem veckor jag hade.</p>
+      <p style="margin-top:12px; font-size:19px; font-weight:700; color:#111;">Du bestämmer dig inte för att köpa.<br>Du bestämmer dig för att testa.</p>
+    </div>
+
+    <div class="cta-wrap">
+      <span class="cta-btn" id="CTA3">
+        Jag testar i 60 dagar
+        <span class="sub">Full garanti · Diskret leverans</span>
+      </span>
+    </div>
+
+    <hr class="divider">
+
+    <h2>Vad folk frågar mig</h2>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <span>Jag har provat salvor och de fungerade inte. Vad är skillnaden?</span>
+        <i class="fas fa-chevron-down faq-chevron"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Apotekssalva är känsla: mentol i ytan som är borta på tjugo minuter, utbredd med handen. Här är det två skillnader samtidigt — vad som finns i gelen, och trycket från de fem kulorna som bearbetar punkten medan de levererar. Att breda ut är inte samma sak som att bearbeta.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <span>Behöver jag kraft i händerna för att använda den?</span>
+        <i class="fas fa-chevron-down faq-chevron"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Nej, och det var precis därför min dotter rekommenderade den och inte en vanlig kräm. Armens tyngd skapar redan trycket och kulorna snurrar av sig själva — det kräver ingen greppstyrka. Det var det som gjorde att jag kunde använda den med de händer jag har i dag.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <span>Krockar den med mina mediciner?</span>
+        <i class="fas fa-chevron-down faq-chevron"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Gelen innehåller inga läkemedel och verkar lokalt, utan att i någon nämnvärd grad gå ut i blodet. Det var därför jag kunde använda den medan jag äter losartan. Har du en specifik fundering, prata med din läkare — och smörj inte på skadad hud.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <span>Hur lång tid tar det innan den verkar?</span>
+        <i class="fas fa-chevron-down faq-chevron"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Kylan kommer direkt. Men <span class="mark">lindringen första dagen är inte samma sak som resultatet.</span> För min del började det som betydde något i andra och tredje veckan. Och rulla långsamt, envisas med punkten — för fort är det vanligaste felet bland dem jag känner som använder den.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <span>Finns den på apotek?</span>
+        <i class="fas fa-chevron-down faq-chevron"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Nej. Bara via den officiella sidan.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+        <span>Jag har en inopererad medicinteknisk apparat. Kan jag använda den?</span>
+        <i class="fas fa-chevron-down faq-chevron"></i>
+      </div>
+      <div class="faq-answer">
+        <p>Kulorna innehåller neodymmagneter, så den som har pacemaker, defibrillator, cochleaimplantat eller insulinpump bör prata med läkaren som ansvarar för apparaten innan användning. Det är den enda verkliga begränsningen med redskapet.</p>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <p>Jag hade elva veckor och ett skäl som inte gick att skjuta upp.</p>
+
+    <p>Du har förmodligen inget bröllop inbokat. Men du har något som tyst har fallit bort från din lista utan att du bestämt någonting — trappan som blev ett problem, utflykten du tackar nej till, resan som alltid blir nästa år.</p>
+
+    <p>Tänk dig att kliva ur sängen och bara gå, utan att först samla dig.</p>
+
+    <p>Att gå nerför trappan med blicken framåt, inte på fötterna.</p>
+
+    <p>Att komma åt din egen ländrygg utan att be någon om hjälp.</p>
+
+    <p>Att sova natten igenom och din fru påpekar på morgonen att du inte rörde dig.</p>
+
+    <p>Jag brände nästan 2 000 kronor på sex veckor på att köpa rätt sak genom fel dörr — och i slutet av de sex veckorna hade jag ingenting kvar. Burkarna tog slut, knästödet blev liggande i lådan, pengarna var borta.</p>
+
+    <p><strong>Redskapet köpte jag en gång, i maj. Det är fortfarande samma.</strong> Jag fyller bara på med gel.</p>
+
+    <p>Om du har ätit gurkmejakapslar i månader utan att märka någon skillnad är det inte du. <strong>Det är vägen — och trycket som saknades.</strong></p>
+
+    <div class="key-line">
+      Växterna bevisade vad de gör för fyra tusen år sedan.<br>Det som saknades var någon som levererade dem på rätt ställe.
+    </div>
+
+    <div class="cta-wrap">
+      <span class="cta-btn" id="CTA4">
+        Starta mina 60 dagar
+        <span class="sub">Full garanti · Inga läkemedel · Diskret leverans</span>
+      </span>
+    </div>
+
+  </div><!-- /article-body -->
+
+
+</div><!-- /page-wrap -->
+
+<div class="floating-bar" id="floatingBar">
+  <span class="cta-btn">
+    Prova Kinzeno
+    <span class="sub">60 dagars garanti</span>
+  </span>
+</div>
+
+</body>
+</html>
